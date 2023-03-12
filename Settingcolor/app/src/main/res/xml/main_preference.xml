@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Setting">
+
+        <EditTextPreference
+            android:key="editText_pref"
+            android:title="Choose number"
+            android:summary="Choose a number to test"
+            android:defaultValue="0"/>
+        <ListPreference
+            android:key="backgroundColor_pref"
+            android:title="Background Color"
+            android:summary="Choose the background color"
+            android:entries="@array/background_colors"
+            android:entryValues="@array/background_color_values"
+            android:defaultValue="@string/default_background_color" />
+    </PreferenceCategory>
+</PreferenceScreen>
